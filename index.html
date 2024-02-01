@@ -29,10 +29,15 @@ Interactividad: -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .container {
+        div{
             display: flex;
+            flex-wrap: wrap;
+            width: 50%;
         }
-
+        div img{
+            width: 50%;
+        }
+  
         .container div{
             padding: 10px;
         }
@@ -41,7 +46,22 @@ Interactividad: -->
             margin-right: 10px;
         }
 
-        
+        table{
+            margin: auto;
+            font-size: 70px;
+            text-align: center;
+            border: solid;
+        }
+        table thead{
+            padding-left: 5px;
+            border: solid black 2px;
+        }
+        th{
+            border: solid black 2px;
+        }
+        td{
+            border: solid black 2px;
+        }
     </style>
 </head>
 
@@ -55,8 +75,6 @@ Interactividad: -->
             <img src="src/4.jpg" alt="Freepick">
             <img src="src/5.jpg" alt="Freepick">
             <img src="src/6.jpg" alt="Freepick">
-        </div>
-        <div>
             <img src="src/7.jpg" alt="Freepick">
             <img src="src/8.jpg" alt="Freepick">
             <img src="src/9.jpg" alt="Freepick">
@@ -65,6 +83,19 @@ Interactividad: -->
             <img src="src/12.jpg" alt="Leonardoai">
         </div>
     </div>
+
+    <table>
+        <thead>
+            <th>Tamaño medio</th>
+            <th>Formato de IMG</th>
+            <th>Tiempo de carga</th>
+        </thead>
+        <tr>
+            <td>1,2MB  por imagen</td>
+            <td>JPG</td>
+            <td>120 ms</td>
+        </tr>
+    </table>
 </body>
 
 </html>
